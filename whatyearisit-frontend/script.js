@@ -1,4 +1,4 @@
-fetch('http://localhost:3000/date')
+fetch('https://perso-rose.vercel.app/')
 	.then(response => response.json())
 	.then(data => {
 		document.querySelector('#year').innerHTML += `
