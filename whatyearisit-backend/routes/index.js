@@ -6,12 +6,9 @@ var router = express.Router();
   res.render('index', { title: 'Express' });
 });*/
 
-router.get("/date", (req, res, next) => {
+router.get("/year", (req, res, next) => {
   let year = new Date().getUTCFullYear();
   res.json({year: year});
   });
-
-
-
 
 module.exports = router;
