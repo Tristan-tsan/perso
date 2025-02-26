@@ -7,7 +7,7 @@ var router = express.Router();
 });*/
 
 router.get("/year", (req, res, next) => {
-  let year = new Date().getUTCFullYear();
+  let year = new Date().getFullYear().toString();
   console.log(year);
   res.json({year: year});
   });
